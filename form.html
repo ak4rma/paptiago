@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Ilearning</title>
+        <link href="css/style.css" rel="stylesheet"/>
+         <meta name="viewport" content="width=device.width, initial-scale=1.0, maximum-scale=1.0">
+         <meta name="description" content="Um curso onde pode aprender muito sobre programação em 
+         vários tipos de lingugens">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <img class="cabecalho-imagem" src="assets/logo2.png" alt="Logo">
+            <nav class="cabecalho-menu">  
+              <a href="index.html" class="cabecalho-menu-item">Página</a>
+              <a href="Sobrenos.html" class="cabecalho-menu-item">Sobre Nós</a>
+              <a href="pacotes.html" class="cabecalho-menu-item">Pacotes</a>
+            </nav>
+        </header>  
+        <main>
+            <section class="conteudo-form">
+                <form>
+                    <section class="grupo">
+                        <div class="campo-form">
+                            <label for="nome"><strong>Nome</strong></label>
+                            <input type="text" name="nome" id="nome" required>
+                        </div>
+                        <div class="campo-form">
+                            <label for="sobrenome"><strong>Sobrenome</strong></label>
+                            <input type="text" name="sobrenome" id="sobrenome" required>
+                        </div>
+                    </section> 
+                    <div class="campo-form">
+                        <label for="email"><strong>Email</strong></label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="campo-form">
+                        <label for="pacotes"><strong>Pacote Requerido:</strong></label>
+                        <select id="pacote" required>
+                          <option selected disabled value="">Selecione</option>
+                          <option>Iniciante</option>
+                          <option>Intermédio</option>
+                          <option>Avançado</option>
+                        </select>
+                    </div>
+        
+                    <section class="grupo">
+                        <div class="check">
+                            <label><strong>Selecione as lingugens que deseja:</strong></label><br><br>
+                            <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                            <label for="tecnologia1"> HTML</label>
+                            <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                            <label for="tecnologia2"> CSS</label>
+                            <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                            <label for="tecnologia3"> JavaScript</label>
+                            <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                            <label for="tecnologia5"> C#</label>
+                            <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                            <label for="tecnologia6"> Python</label>
+                            <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                            <label for="tecnologia7"> Java</label>
+                        </div>
+                    </section>
+                    <div class="campo">
+                        <br>
+                        <label for="experiencia"><strong>Digite alguma duvida: </strong></label><br>
+                        <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+                    </div>
+                    <button class="botao" type="submit" onsubmit="">Concluído</button>            
+        
+                </form>
+            </section>
+        </main>
+        
+    </body>
+
+</html>
